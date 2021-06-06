@@ -1,17 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import Footer from "../Components/Footer";
+import MainGrid from "../Components/MainGrid";
+import MainImage from "../Components/MainImage";
+import MainImageSlider from "../Components/MainImageSlider";
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const Home = () => {
-  console.log("Home");
   return (
     <>
-      <Wrapper>Home</Wrapper>
+      <Wrapper>
+        <MainImageSlider />
+        <MainImage />
+        <MainGrid />
+      </Wrapper>
     </>
   );
 };
